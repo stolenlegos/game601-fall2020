@@ -2731,6 +2731,7 @@ SampleRate(){return this._sampleRate},CurrentTime(){if(self["C3_GetAudioContextC
 		C3.Plugins.Mouse,
 		C3.Plugins.Audio,
 		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Audio.Acts.StopAll,
 		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Mouse.Cnds.IsOverObject,
@@ -2756,7 +2757,8 @@ SampleRate(){return this._sampleRate},CurrentTime(){if(self["C3_GetAudioContextC
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.Mouse.Exps.X,
 		C3.Plugins.Mouse.Exps.Y,
-		C3.Plugins.Sprite.Cnds.IsOverlapping
+		C3.Plugins.Sprite.Cnds.IsOverlapping,
+		C3.Plugins.System.Acts.GoToLayoutByName
 		];
 	};
 	self.C3_JsPropNameTable = [
@@ -2902,6 +2904,9 @@ SampleRate(){return this._sampleRate},CurrentTime(){if(self["C3_GetAudioContextC
 		{Audio: 0},
 		{Text: 0},
 		{Text2: 0},
+		{Text3: 0},
+		{Sprite4: 0},
+		{howToPlay: 0},
 		{dayCount: 0},
 		{equipmentSanitized: 0},
 		{ingOpen: 0},
@@ -3185,7 +3190,8 @@ SampleRate(){return this._sampleRate},CurrentTime(){if(self["C3_GetAudioContextC
 		() => "equipmentFunctions3",
 		() => 20,
 		() => 81,
-		() => "winStates3"
+		() => "winStates3",
+		() => "title"
 	];
 }
 
