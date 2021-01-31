@@ -2935,6 +2935,7 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		C3.Plugins.Mouse,
 		C3.Plugins.Audio,
 		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.Audio.Acts.Stop,
 		C3.Behaviors.Pin.Acts.PinByProperties,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Audio.Acts.AddGainEffect,
@@ -2975,7 +2976,8 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
 		C3.Plugins.Mouse.Cnds.IsOverObject,
 		C3.Plugins.Sprite.Acts.SetSize,
-		C3.Plugins.System.Acts.GoToLayout
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Cnds.OnLoadFinished
 		];
 	};
 	self.C3_JsPropNameTable = [
@@ -3188,8 +3190,8 @@ WaypointYAt(i){return this._GetWaypointYAt(i)}}};
 	}
 
 	self.C3_ExpressionFuncs = [
-		() => -15,
 		() => "",
+		() => -15,
 		() => "letter",
 		() => 0,
 		() => "Movement",
